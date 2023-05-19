@@ -1,0 +1,27 @@
+COMANDOS
+
+>ng new nombreproyecto	|crear un proyecto
+>ng serve -o		|arranca un servidor web, debes posicionarte en la ubicacion del proyecto
+>ng g c "nombreComponente"	|genera un componente en la carpeta ubicada
+
+
+GIT
+>git branch nombre	|crea rama
+>git branch		|muestra las ramas
+>git checkout Nombre	|cambia de rama
+>git add .		|agrega los archivos para poder ser guardados
+>git commit -m "comentarios para el commit"
+
+
+
+Clonar repo
+>git clone url	| proyecto,code,clone,https
+
+
+
+REVISAR!
+-etiqueta <form>
+-formBuilder
+-formGroup
+-formControlName
+-Formularios reactivos
