@@ -11,7 +11,7 @@ GIT
 >git checkout Nombre	|cambia de rama
 >git add .		|agrega los archivos para poder ser guardados
 >git commit -m "comentarios para el commit"
-
+>git push origin main	|se hace push a la rama
 
 
 Clonar repo
