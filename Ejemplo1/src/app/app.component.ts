@@ -28,7 +28,7 @@ export class AppComponent {
       suma+=this.sueldos[x];
     return suma;
   }
-
+  //6. Captura de eventos
   contador = 1;
   incrementar(){
     this.contador++;
@@ -36,4 +36,7 @@ export class AppComponent {
   decrementar(){
     this.contador--;
   }
+  //7. Directiva ngModel
+  nombre1 = "";
+  apellido1 = "";
 }

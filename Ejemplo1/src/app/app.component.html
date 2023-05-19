@@ -19,8 +19,8 @@
   <p>{{esActivo()}}</p>
   <p>Puede visitar el sitio ingresando <a href="{{sitio}}">aquí</a></p>
   <hr>
-  <h1>ngIf & ngFor</h1>
   <div>
+    <h1>5. Directivas *ngIf y *ngFor</h1>
     <p *ngIf="edad >= 18; else menor">Es mayor de edad.</p>
     <ng-template #menor><p>Es un menor de edad.</p></ng-template>
     <table border="1">
@@ -33,10 +33,18 @@
     </table>
   </div>
   <hr>
+  <h1>6. Captura de eventos</h1>
+  <div style="border: 2px solid blue; padding: 5pt;width: 100pt;border-radius: 10pt;">
+    <p style="margin-left: 45pt;">{{contador}}</p>
+    <button (click)="decrementar()" style="cursor: pointer;">Restar 1</button>
+    <button (click)="incrementar()" style="cursor: pointer;">Sumar 1</button>
+  </div>
+  <hr>
   <div>
-    <p>{{contador}}</p>
-    <button (click)="incrementar()">Sumar 1</button>
-    <button (click)="decrementar()">Restar 1</button>
+    <h1>7. Directiva ngModel</h1>
+    <p>Ingrese nombre<input type="text" [(ngModel)]="nombre1"></p>
+    <p>Ingrese apellido<input type="text" [(ngModel)]="apellido1"></p>  
+    <p>Nombre completo:{{nombre1}} {{apellido1}}</p>
   </div>
 </div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
