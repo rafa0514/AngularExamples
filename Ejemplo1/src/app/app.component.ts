@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Ejemplo1';
   nombre = 'Rodriguez Pablo';
-  edad = 40;
+  edad = 18;
   email = 'rpablo@gmail.com';
   sueldos = [1700, 1600, 1900];
   activo = true;
@@ -27,5 +27,13 @@ export class AppComponent {
     for(let x=0; x<this.sueldos.length; x++)
       suma+=this.sueldos[x];
     return suma;
+  }
+
+  contador = 1;
+  incrementar(){
+    this.contador++;
+  }
+  decrementar(){
+    this.contador--;
   }
 }
