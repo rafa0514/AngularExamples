@@ -1,0 +1,23 @@
+.scrollable-div {
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+.botonScroll:disabled{
+    background-color: rgb(255, 185, 185);
+    cursor: default;
+}
+
+.botonScroll:enabled{
+    background-color: red;
+    cursor: pointer;
+}
+
+.botonScroll{
+    width: 150px;
+    height: 80px;
+    color:white;
+    border-radius: 10pt;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
