@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -66,4 +67,16 @@ export class AppComponent {
       }        
     alert('No existe el código de articulo ingresado');
   }
+
+  @ViewChild('scrollableDiv') scrollableDivRef!: ElementRef;
+
+  scrollCompleted: boolean = false;
+
+  onScroll(): void {
+    const scrollableDiv = this.scrollableDivRef.nativeElement;
+    if (scrollableDiv.scrollHeight - scrollableDiv.scrollTop === scrollableDiv.clientHeight) {
+      this.scrollCompleted = true;
+    }
+  }
+
 }
